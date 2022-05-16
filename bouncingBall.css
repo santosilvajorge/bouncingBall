@@ -11,5 +11,42 @@ body {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    margin: 50%
+    margin: 50%;
+    animation: bouncingBall 3s infinite;
+}
+
+@keyframes bouncingBall {
+10% {
+        width: 8px;
+        height: 14px;
+}
+30% {
+     width: 8px;
+     height: 14px;
+
+ }
+ 50% {
+    width: 10px;
+    height: 0px; 
+    transform: translateY(400px);
+ }
+ 75% {
+    width: 5px;
+
+}
+100% {
+    transform: translateY(0px);
+}
+}
+.shadow {
+    display: flex;
+    position: relative; 
+    padding: 10px;
+    background-color:rgba(143, 142, 142, 0.3);
+    width: 20px;
+    height: 5px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 43%;
 }
