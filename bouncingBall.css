@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     margin: 50%;
-    animation: bouncingBall 3s infinite;
+    animation: bouncingBall 3s ease-in-out infinite;
 }
 
 @keyframes bouncingBall {
@@ -41,16 +41,42 @@ body {
 }
 .shadow {
     display: flex;
-    position: relative; 
     padding: 10px;
-    background-color:rgba(143, 142, 142, 0.193);
-    width: 20px;
-    height: 5px;
+    background-color:rgba(104, 103, 103, 0.432);
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
-    margin: 49.5%;
-    animation: shadow 3s infinite
+    align-items: center;
+    justify-content: center;
+    margin: 50%;
+    animation: shadow 3s ease-in-out infinite;
 }
+
 @keyframes shadow {
+    10% {
+            width: 8px;
+            height: 14px;
+    }
+    30% {
+         width: 8px;
+         height: 14px;
+    
+     }
+     50% {
+        width: 10px;
+        height: 0px; 
+        transform: translateY(-10px);
+     }
+     75% {
+        width: 5px;
+    
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    }
+    
+/* @keyframes shadow {
     10% {
         width: 2px;
     }
@@ -71,4 +97,5 @@ body {
      100% {
          width: 0px;
      }
-}
+} */
+
